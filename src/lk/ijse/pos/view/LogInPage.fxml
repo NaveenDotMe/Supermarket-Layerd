@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="748.0" style="-fx-background-color: #99b1c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.LogInPageController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="748.0" style="-fx-background-color: #99b1c7;" stylesheets="@assests/style/Style..css">
+         <children>
+            <AnchorPane fx:id="mainLayer" layoutX="391.0" layoutY="52.0" prefHeight="348.0" prefWidth="330.0" style="-fx-background-radius: 30; -fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="295.0" fitWidth="287.0" layoutX="22.0" layoutY="41.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assests/image/circle1.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="76.0" layoutY="111.0" prefHeight="39.0" prefWidth="231.0" promptText="User Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="pswPassword" labelFloat="true" layoutX="76.0" layoutY="185.0" prefHeight="39.0" prefWidth="231.0" promptText="Password">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="btnLogIn" buttonType="RAISED" layoutX="206.0" layoutY="296.0" onAction="#btnLogInOnAction" prefHeight="32.0" prefWidth="97.0" styleClass="button-login" text="Log In" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="361.0" layoutY="429.0" prefHeight="16.0" prefWidth="380.0" text="Copyright 2021 SUPERMARKET. All Rights Reserved. Naveen pabhath.">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="429.0" prefHeight="16.0" prefWidth="87.0" text="Version 1.0.0">
+               <font>
+                  <Font name="AGaramondPro-Bold" size="11.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="550.0" fitWidth="546.0" layoutX="-5.0" layoutY="-74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/image/11697-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="434.0" prefWidth="769.0" style="-fx-background-color: white;" stylesheets="@assests/style/Style..css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.ItemMovableController">
+   <children>
+      <ImageView fitHeight="264.0" fitWidth="257.0" layoutX="75.0" layoutY="-85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/image/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imgHome" fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#navigateToBack" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@assests/image/back_96px.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="322.0" layoutY="81.0" prefHeight="1.0" prefWidth="422.0" />
+      <Label alignment="CENTER" layoutX="341.0" layoutY="23.0" prefHeight="35.0" prefWidth="404.0" styleClass="liner-title" text="Item Movable" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblItemMovables" layoutX="24.0" layoutY="96.0" prefHeight="303.0" prefWidth="300.0">
+         <columns>
+            <TableColumn prefWidth="159.0" text="Item Code" />
+            <TableColumn prefWidth="139.0" text="Qty" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="313.0" fitWidth="447.0" layoutX="333.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/image/moveble.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+package lk.ijse.pos.dao.custom;
+
+import lk.ijse.pos.dao.CrudDAO;
+import lk.ijse.pos.entity.OrderDetails;
+import lk.ijse.pos.entity.Orders;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public interface CustomerIncomeDAO extends CrudDAO<Orders, String> {
+    ArrayList<Orders> getCustomerIncome() throws SQLException, ClassNotFoundException;
+}

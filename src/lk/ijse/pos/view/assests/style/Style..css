@@ -1,0 +1,107 @@
+.button-login{
+    -fx-background-color: #00779c;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #ffffff;
+}
+
+.button-login:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #273c75;
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0);
+}
+
+#imgHome:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0);
+}
+
+.table-view:focused{
+    -fx-background-insets: 0px;
+}
+
+.table-view .column-header{
+    -fx-size:32px;
+    -fx-background-color: #264678;
+    -fx-font-size: 14px;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:empty{
+    -fx-background-color: white;
+    -fx-font-size: 12px;
+}
+
+.table-view .table-row-cell:selected{
+    -fx-background-color:linear-gradient(to right, rgba(119, 8, 245, 0.29), rgba(15, 93, 255, 0.39));
+}
+
+.table-view .table-row-cell:selected *{
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(54, 49, 49);
+    -fx-font-size: 13px;
+}
+
+.textPane{
+    -fx-background-color: white;
+    -fx-border-color: #808e9b;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+}
+
+.textField{
+    -fx-background-color: white;
+    -fx-prompt-text-fill: #726d6d;
+    -fx-background-radius: 30px;
+}
+
+.textLabel{
+    -fx-background-color: white;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: black !important;
+}
+
+.button-report{
+    -fx-background-color: linear-gradient(to left, #5b96f5, #426fb8);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-border-color: #ffffff;
+}
+.button-report:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #0984e3;
+}
+
+.liner-title {
+    -fx-background-radius: 30px;
+    -fx-background-color: linear-gradient(to left, #497dd1, #1d3152);
+}
+.btnAddNew{
+    -fx-background-color: #004687;
+    -fx-text-fill: white;
+    -fx-background-radius: 30px;
+}
+
+.btnSave{
+    -fx-background-color: #496a8a;
+    -fx-text-fill: white;
+    -fx-background-radius: 30px;
+    -fx-font-weight: bold;
+}
+
+.btnDelete{
+    -fx-background-color: #557857;
+    -fx-text-fill: white;
+    -fx-background-radius: 30px;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="430.0" prefWidth="672.0" stylesheets="@assests/style/Style..css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.CashierMainController">
+   <children>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="41.0" layoutY="335.0" prefHeight="38.0" prefWidth="586.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="42.0" layoutY="367.0" prefHeight="25.0" prefWidth="586.0" text="Please select one of above main operations to proceed">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="402.0" fitWidth="406.0" layoutX="135.0" layoutY="-142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/image/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCustomer" fitHeight="100.0" fitWidth="100.0" layoutX="212.0" layoutY="167.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/image/business_building_96px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgOrders" fitHeight="100.0" fitWidth="100.0" layoutX="356.0" layoutY="179.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/image/add_shopping_cart_96px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="220.0" layoutY="114.0" prefHeight="19.0" prefWidth="233.0" text="Point of Sale System " textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="17.0" text="Cashier">
+         <font>
+            <Font name="Ubuntu" size="27.0" />
+         </font>
+      </Label>
+      <ImageView id="imgHome" fitHeight="53.0" fitWidth="55.0" layoutX="8.0" layoutY="12.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/image/home-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
